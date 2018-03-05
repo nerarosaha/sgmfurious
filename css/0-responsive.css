@@ -1,0 +1,387 @@
+/*------------------------------------------------------------------
+
+@Author: CodeoStudio
+@URL:    http://codeostudio.hr/
+
+[Table of contents]
+
+1. Container
+2. Site brand
+3. Header banner
+4. Navigation bar
+5. Main content
+6. Featured posts
+7. Post single
+8. Login form (dialog)
+9. 404 Page
+10. Random posts
+11. Quick icons
+12. Footer
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+    1. Container
+-------------------------------------------------------------------*/
+#wpadminbar {
+    position: fixed;
+}
+.cs-container {
+    padding-left: 15px;
+    padding-right: 15px
+}
+.cs-col {
+    width: 100%
+}
+
+/*------------------------------------------------------------------
+    2. Site brand
+-------------------------------------------------------------------*/
+#cs-site-brand {
+    display: none;
+}
+/* Second */
+.cs-site-brand-second {
+    display: block;
+}
+
+
+/*------------------------------------------------------------------
+    3. Header banner
+-------------------------------------------------------------------*/
+.cs-header-banner {
+    width: 100%
+}
+body.df-no-header-banner .cs-header-banner {
+    display: none !important
+}
+
+/*------------------------------------------------------------------
+    4. Navigation bar
+-------------------------------------------------------------------*/
+.cs-side-menu {
+    display: block
+}
+#cs-header.cs-h-style-2 .cs-side-menu {
+    color: #333
+}
+.cs-navigation-bar {
+    background-color: #f0f0f0 !important
+}
+.cs-navigation-bar nav {
+    display: none
+}
+body.admin-bar .cs-navigation-bar.fixed {
+    top: 46px
+}
+
+/*------------------------------------------------------------------
+    5. Main content
+-------------------------------------------------------------------*/
+.cs-main-content,
+.cs-main-content.cs-sidebar-on-the-right,
+.cs-main-content.cs-sidebar-on-the-left,
+.cs-main-sidebar {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0
+}
+body.df-no-sidebar .cs-main-sidebar {
+    display: none !important
+}
+
+/*------------------------------------------------------------------
+    6. Featured posts
+-------------------------------------------------------------------*/
+body.single-post .cs-featured-posts {
+    display: none;
+}
+.cs-featured-posts .cs-post-item {
+    width: 50%;
+}
+.cs-featured-posts .cs-post-item .cs-post-shares {
+    display: none;
+}
+.cs-featured-posts .cs-post-item:first-child {
+    width: 100%
+}
+.cs-featured-posts .cs-post-item:first-child .cs-post-shares {
+    display: block
+}
+.cs-featured-posts .cs-post-item:nth-child(2n) {
+    clear: left
+}
+.cs-featured-posts .cs-post-item .cs-post-header {
+    margin-bottom: 15px
+}
+
+/*------------------------------------------------------------------
+    7. Post single
+-------------------------------------------------------------------*/
+.cs-post-item.post .cs-post-header h1 {
+    font-size: 24px;
+    line-height: 34px
+}
+.cs-post-item .cs-post-meta-details-second {
+    display: block;
+}
+
+/* Grid */
+.cs-blog-grid .cs-post-item.post {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0
+}
+.cs-blog-grid .cs-post-item .cs-post-meta-details .cs-post-points,
+.cs-blog-grid .cs-post-item .cs-post-meta-details-second .cs-post-points {
+    border-bottom: 0;
+    padding: 0;
+    margin: 0
+}
+
+/* Post share buttons */
+.cs-post-meta-details .cs-post-points,
+.cs-post-meta-details-second .cs-post-points {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee
+}
+.cs-post-meta-details .cs-post-points .cs-post-thumbs a,
+.cs-post-meta-details-second .cs-post-points .cs-post-thumbs a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px
+}
+.cs-post-meta-details .cs-post-points .cs-post-thumbs,
+.cs-post-meta-details-second .cs-post-points .cs-post-thumbs {
+    float: left;
+    margin-right: 10px
+}
+.cs-post-meta-details .cs-post-points .cs-post-meta,
+.cs-post-meta-details-second .cs-post-points .cs-post-meta {
+    margin-top: 0;
+    font-size: 11px
+}
+.cs-post-buttons {
+    width: 100%
+}
+.cs-post-item .cs-post-meta-details.fixed {
+    display: none;
+}
+/* Mashare plugin */
+.cs-post-meta-details .mashsb-count {
+    margin-top: 0
+}
+.mashsb-buttons {
+    float: right;
+}
+.mashsb-buttons a {
+    height: 30px;
+    font-size: 12px;
+    min-width: 30px !important;
+    padding: 9px !important;
+}
+.mashsb-buttons a .text {
+    display: none;
+}
+[class*="mashicon-"] .icon:before,
+[class^=mashicon-] .icon:before {
+    font-size: 12px;
+    width: auto;
+    margin-right: 0;
+}
+.onoffswitch {
+    height: 30px;
+    width: 30px;
+    line-height: 30px
+}
+.onoffswitch:before {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px
+}
+.onoffswitch2 {
+    line-height: 30px;
+    height: 30px;
+    width: 30px
+}
+/* Post header */
+.cs-blog-list .cs-post-item .cs-post-header h3 {
+    font-size: 18px;
+    line-height: 26px
+}
+
+/* Post controls */
+.cs-site-brand-second .cs-post-next-header {
+    right: 15px;
+    top: 10px
+}
+.cs-post-controls {
+    display: none
+}
+
+/* Controls in header */
+.cs-post-header .cs-post-next-header {
+    display: none;
+}
+
+/* Grid */
+.cs-blog-grid .cs-post-item.post,
+.cs-blog-grid .cs-content-banner {
+    margin: 0 0 15px 0;
+    width: 100%
+}
+.cs-blog-grid.cs-massonry-two-in-row .cs-post-item.post,
+.cs-blog-grid.cs-massonry-two-in-row .cs-content-banner,
+.cs-blog-grid.cs-massonry-three-in-row .cs-post-item.post,
+.cs-blog-grid.cs-massonry-three-in-row .cs-content-banner,
+.cs-blog-grid.cs-massonry-four-in-row .cs-post-item.post,
+.cs-blog-grid.cs-massonry-four-in-row .cs-content-banner,
+.cs-blog-grid.cs-massonry-four-in-row.cs-clearfix {
+    width: 100%;
+}
+.cs-blog-grid {
+    /*padding: 0 15px*/
+}
+
+/*------------------------------------------------------------------
+    8. Login form (dialog)
+-------------------------------------------------------------------*/
+.cs-popup-background {
+    padding: 20px;
+    background-color: #fff
+}
+body.admin-bar .cs-popup-background {
+    top: 46px
+}
+.cs-popup-window,
+#cs-popup-upload.cs-popup-window {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0
+}
+
+/*------------------------------------------------------------------
+    9. 404 Page
+-------------------------------------------------------------------*/
+.cs-404-page {
+    padding: 40px 0;
+    text-align: center;
+}
+.cs-404-page h3 {
+    font-size: 60px;
+    line-height: 60px
+}
+.cs-404-text {
+    width: 100%;
+    margin-right: 0
+}
+.cs-404-image {
+    width: 100%
+}
+
+/*------------------------------------------------------------------
+    10. Random posts
+-------------------------------------------------------------------*/
+.cs-random-posts li {
+    width: 49%;
+    margin-right: 2%;
+    float: left;
+    clear: none;
+    margin-bottom: 20px
+}
+.cs-random-posts li:last-child,
+.cs-random-posts li:nth-child(2n) {
+    margin-right: 0
+}
+.cs-random-posts li .cs-post-thumb {
+    margin-bottom: 10px;
+    position: relative;
+}
+.cs-random-posts li .cs-post-inner h3 {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 700;
+    margin: 0
+}
+.cs-random-posts li .cs-post-inner .cs-post-meta {
+    font-size: 12px;
+    color: #666
+}
+
+/*------------------------------------------------------------------
+    11. Quick icons
+-------------------------------------------------------------------*/
+.cs-quick-icons {
+    position: static
+}
+.cs-quick-icons ul {
+    overflow: hidden;
+    text-align: center;
+}
+.cs-quick-icons ul li {
+    margin-bottom: 0;
+    display: inline-block;
+    width: 16.66666666666667%
+}
+.cs-quick-icons ul li a {
+    width: auto;
+    background-color: #f0f0f0;
+    color: #333 !important;
+    border-top: 0;
+    border-bottom: 0;
+}
+.cs-quick-icons ul li a:after {
+    display: none !important
+}
+.cs-quick-icons ul li:last-child a {
+    border-right: 0
+}
+
+/*------------------------------------------------------------------
+    12. Footer
+-------------------------------------------------------------------*/
+.cs-footer-nav {
+    margin-top: 10px
+}
+.cs-footer-nav ul {
+    text-align: left;
+    float: none
+}
+.cs-footer-nav ul li {
+    float: left;
+    margin-left: 0;
+    margin-right: 10px
+}
+
+
+div.df-nsfw {
+    overflow: visible;
+
+}
+
+div.df-nsfw h3 {
+    font-size: 20px;
+    margin-top: 0px;
+    padding-top: 115px;
+}
+
+.cs-random-posts div.df-nsfw h3 {
+    margin-top: 0px;
+    padding-top: 27px;
+}
+
+.cs-related-article div.df-nsfw h3  {
+    margin-top: 0px;
+    padding-top: 50px;
+}
+.cs-featured-posts div.df-nsfw h3  {
+    margin-top: 0px;
+    padding-top: 14px;
+}

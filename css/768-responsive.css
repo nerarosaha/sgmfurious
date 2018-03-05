@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------
+
+@Author: CodeoStudio
+@URL:    http://codeostudio.hr/
+
+[Table of contents]
+
+1. Container
+2. Navigation bar
+3. Post single
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+	1. Container
+-------------------------------------------------------------------*/
+#cs-wrapper.boxed {
+	width: 830px
+}
+.cs-container {
+	width: 750px
+}
+.cs-col {
+	float: left
+}
+
+/*------------------------------------------------------------------
+    2. Navigation bar
+-------------------------------------------------------------------*/
+.cs-navigation-bar nav {
+	font-size: 14px
+}
+.cs-navigation-bar nav > ul > li > a {
+    padding: 12px 6px
+}
+
+/*------------------------------------------------------------------
+    3. Post single
+-------------------------------------------------------------------*/
+.cs-post-meta-details .cs-post-points .cs-post-meta {
+	display: none;
+}
+.cs-post-item .cs-post-meta-details.fixed .cs-meta-holder {
+    width: 750px
+}
